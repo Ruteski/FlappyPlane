@@ -5,11 +5,12 @@ using UnityEngine;
 public class ObstaculoController : MonoBehaviour
 {
     [SerializeField] private float velocidade = 5f;
+    [SerializeField] private GameObject eu;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Destroy(eu, 5f);
     }
 
     // Update is called once per frame
