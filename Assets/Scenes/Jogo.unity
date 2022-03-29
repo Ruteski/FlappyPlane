@@ -311,3 +311,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b310d958fefb7494c9c6569666576857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: 1
+  obstaculo: {fileID: 4669366457464575405, guid: 066f7e5dd6e345941851b274c2d845cd, type: 3}
+  posicao: {x: 12, y: 0, z: 0}
