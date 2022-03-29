@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -38,5 +39,10 @@ public class PlayerController : MonoBehaviour
             //travando a velocidade de queda em -5
             meuRB.velocity = Vector2.down * velocidade;
         }
+    }
+
+    //configurando a colisao do player
+    private void OnTriggerEnter2D(Collider2D collision) {
+        SceneManager.LoadScene("Jogo");
     }
 }
