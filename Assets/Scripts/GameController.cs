@@ -8,6 +8,10 @@ public class GameController : MonoBehaviour
     [SerializeField] private float timer = 1f;
     [SerializeField] private GameObject obstaculo;
 
+    //posicao minima e maxima para criacao
+    [SerializeField] private float posMin = -0.3f;
+    [SerializeField] private float posMax = 2.4f;
+
     //posicao para criar obstaculo
     [SerializeField] private Vector3 posicao;
 
@@ -25,8 +29,10 @@ public class GameController : MonoBehaviour
         if (timer <= 0f) {
             timer = 1f;
 
+            posicao.y = Random.Range(posMin, posMax);   
+
             //criando os obstaculos
-            Instantiate(obstaculo, posicao, Quaternion.identity);
+            Instantiate(obstaculo, posicao, Quaternion.identity); // ou da pra usar o tranform.rotation no lugar do quaternion
         }
     }
 
