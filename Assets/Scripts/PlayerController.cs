@@ -24,5 +24,11 @@ public class PlayerController : MonoBehaviour
             //fazendo a velocidade do RB ir para cima
             meuRB.velocity = Vector2.up * velocidade;
         }
+
+        //limitando a velocidade de queda
+        if (meuRB.velocity.y < -velocidade) {
+            //travando a velocidade de queda em -5
+            meuRB.velocity = Vector2.down * velocidade;
+        }
     }
 }
