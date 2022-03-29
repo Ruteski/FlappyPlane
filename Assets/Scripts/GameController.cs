@@ -18,6 +18,9 @@ public class GameController : MonoBehaviour {
     //posicao para criar obstaculo
     [SerializeField] private Vector3 posicao;
 
+    //variavel dos pontos
+    private float pontos = 0f;
+
     // Start is called before the first frame update
     void Start() {
 
@@ -25,6 +28,14 @@ public class GameController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        //ganhando pontos
+        pontos+= Time.deltaTime;
+
+        CriaObstaculo();
+
+    }
+
+    void CriaObstaculo() {
         timer -= Time.deltaTime;
 
         if (timer <= 0f) {
@@ -36,6 +47,4 @@ public class GameController : MonoBehaviour {
             Instantiate(obstaculo, posicao, Quaternion.identity); // ou da pra usar o tranform.rotation no lugar do quaternion
         }
     }
-
-    //
 }
