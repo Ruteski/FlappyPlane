@@ -27,13 +27,14 @@ public class GameController : MonoBehaviour {
 
     //variavel do level
     private int level = 1;
+    [SerializeField] private Text levelTexto;
 
     //variavel para ganhar level
     [SerializeField] private float proximoLevel = 10f;
 
     // Start is called before the first frame update
     void Start() {
-
+        levelTexto.text = "Level: 1";
     }
 
     // Update is called once per frame
@@ -53,6 +54,7 @@ public class GameController : MonoBehaviour {
     private void GanhaLevel() {
         if (pontos >= proximoLevel) {
             level++;
+            levelTexto.text = "Level: " + level.ToString();
             proximoLevel += proximoLevel;
         }
     }
