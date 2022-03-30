@@ -29,13 +29,18 @@ public class GameController : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         //ganhando pontos
-        pontos+= Time.deltaTime;
+        Pontos();
 
         CriaObstaculo();
 
     }
 
-    void CriaObstaculo() {
+    private void Pontos() {
+        pontos += Time.deltaTime;
+        pontos = Mathf.Round(pontos);
+    }
+
+    private void CriaObstaculo() {
         timer -= Time.deltaTime;
 
         if (timer <= 0f) {
