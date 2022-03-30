@@ -36,13 +36,12 @@ public class GameController : MonoBehaviour {
         Pontos();
 
         CriaObstaculo();
-
     }
 
     private void Pontos() {
         pontos += Time.deltaTime;
 
-        pontosTexto.text = pontos.ToString();
+        pontosTexto.text = Mathf.Round(pontos).ToString();
 
         //pontos = Mathf.Round(pontos);
     }
