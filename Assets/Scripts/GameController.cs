@@ -23,7 +23,13 @@ public class GameController : MonoBehaviour {
     private float pontos = 0f;
 
     //variavel dos pontos do canvas
-    [SerializeField] private Text pontosTexto; 
+    [SerializeField] private Text pontosTexto;
+
+    //variavel do level
+    private int level = 1;
+
+    //variavel para ganhar level
+    [SerializeField] private float proximoLevel = 10f;
 
     // Start is called before the first frame update
     void Start() {
@@ -34,16 +40,21 @@ public class GameController : MonoBehaviour {
     void Update() {
         //ganhando pontos
         Pontos();
-
         CriaObstaculo();
+        GanhaLevel();
     }
 
     private void Pontos() {
         pontos += Time.deltaTime;
 
         pontosTexto.text = Mathf.Round(pontos).ToString();
-
-        //pontos = Mathf.Round(pontos);
+    }
+    
+    private void GanhaLevel() {
+        if (pontos >= proximoLevel) {
+            level++;
+            proximoLevel += proximoLevel;
+        }
     }
 
     private void CriaObstaculo() {
