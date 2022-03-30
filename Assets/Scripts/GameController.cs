@@ -63,7 +63,7 @@ public class GameController : MonoBehaviour {
         timer -= Time.deltaTime;
 
         if (timer <= 0f) {
-            timer = Random.Range(tMin, tMax);
+            timer = Random.Range(tMin / level, tMax);
 
             posicao.y = Random.Range(posMin, posMax);
 

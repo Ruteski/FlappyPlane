@@ -470,7 +470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7104067660106144955, guid: 70ec9e0a87d8f3142889b3ba25399ece, type: 3}
       propertyPath: tMax
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7104067660106144955, guid: 70ec9e0a87d8f3142889b3ba25399ece, type: 3}
       propertyPath: levelTexto
