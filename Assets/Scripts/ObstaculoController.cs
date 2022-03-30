@@ -17,7 +17,6 @@ public class ObstaculoController : MonoBehaviour
         //encontrando o game controller da cena atual
         game = FindObjectOfType<GameController>();
 
-        velocidade += game.RetornaLevel();
     }
 
     // Update is called once per frame
@@ -25,5 +24,7 @@ public class ObstaculoController : MonoBehaviour
     {
         //indo pra esquerda
         transform.position += Time.deltaTime * velocidade * Vector3.left;
+        
+        velocidade = 4f + game.RetornaLevel();
     }
 }
