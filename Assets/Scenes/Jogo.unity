@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 122298447}
   - component: {fileID: 122298446}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Pontos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -563,3 +563,4 @@ MonoBehaviour:
   tMin: 1
   tMax: 4
   posicao: {x: 12, y: 0, z: 0}
+  pontosTexto: {fileID: 122298446}

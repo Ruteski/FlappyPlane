@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI; // pra poder pegar as informações do canvas
 
 public class GameController : MonoBehaviour {
     //timer
@@ -21,6 +22,9 @@ public class GameController : MonoBehaviour {
     //variavel dos pontos
     private float pontos = 0f;
 
+    //variavel dos pontos do canvas
+    [SerializeField] private Text pontosTexto; 
+
     // Start is called before the first frame update
     void Start() {
 
@@ -37,7 +41,10 @@ public class GameController : MonoBehaviour {
 
     private void Pontos() {
         pontos += Time.deltaTime;
-        pontos = Mathf.Round(pontos);
+
+        pontosTexto.text = pontos.ToString();
+
+        //pontos = Mathf.Round(pontos);
     }
 
     private void CriaObstaculo() {
