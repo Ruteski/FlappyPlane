@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObstaculoController : MonoBehaviour
 {
-    [SerializeField] private float velocidade = 5f;
+    [SerializeField] private float velocidade = 4f;
     [SerializeField] private GameObject eu;
 
     [SerializeField] private GameController game;
@@ -13,6 +13,11 @@ public class ObstaculoController : MonoBehaviour
     void Start()
     {
         Destroy(eu, 5f);
+
+        //encontrando o game controller da cena atual
+        game = FindObjectOfType<GameController>();
+
+        velocidade += game.RetornaLevel();
     }
 
     // Update is called once per frame
