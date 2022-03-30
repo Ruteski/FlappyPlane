@@ -7,6 +7,8 @@ public class ObstaculoController : MonoBehaviour
     [SerializeField] private float velocidade = 5f;
     [SerializeField] private GameObject eu;
 
+    [SerializeField] private GameController game;
+
     // Start is called before the first frame update
     void Start()
     {

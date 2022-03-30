@@ -71,4 +71,9 @@ public class GameController : MonoBehaviour {
             Instantiate(obstaculo, posicao, Quaternion.identity); // ou da pra usar o tranform.rotation no lugar do quaternion
         }
     }
+
+    //metodo para retornar o level
+    public int RetornaLevel() {
+        return level;
+    }
 }

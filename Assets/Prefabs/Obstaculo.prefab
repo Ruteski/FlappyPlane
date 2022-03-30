@@ -156,6 +156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidade: 5
   eu: {fileID: 4669366457464575405}
+  game: {fileID: 7104067660106144955, guid: 70ec9e0a87d8f3142889b3ba25399ece, type: 3}
 --- !u!1 &4669366458161184723
 GameObject:
   m_ObjectHideFlags: 0
