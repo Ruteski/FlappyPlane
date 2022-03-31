@@ -48,8 +48,8 @@ MonoBehaviour:
   posMin: -0.3
   posMax: 2.4
   tMin: 1
-  tMax: 4
+  tMax: 3
   posicao: {x: 12, y: 0, z: 0}
   pontosTexto: {fileID: 0}
   levelTexto: {fileID: 0}
-  proximoLevel: 10
+  proximoLevel: 2

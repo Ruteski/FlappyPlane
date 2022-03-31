@@ -376,6 +376,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5230854575176408351, guid: ffd7265302741434d90e63607b7c02e0, type: 3}
+      propertyPath: m_Text
+      value: 'Pontos: '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5230854575176408351, guid: ffd7265302741434d90e63607b7c02e0, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5230854575176408351, guid: ffd7265302741434d90e63607b7c02e0, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5230854575176408351, guid: ffd7265302741434d90e63607b7c02e0, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5230854575283489280, guid: ffd7265302741434d90e63607b7c02e0, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5230854575283489280, guid: ffd7265302741434d90e63607b7c02e0, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5230854575283489280, guid: ffd7265302741434d90e63607b7c02e0, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5230854575685252916, guid: ffd7265302741434d90e63607b7c02e0, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -462,6 +490,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5230854575685252920, guid: ffd7265302741434d90e63607b7c02e0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5230854576091524094, guid: ffd7265302741434d90e63607b7c02e0, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5230854576091524094, guid: ffd7265302741434d90e63607b7c02e0, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5230854576091524094, guid: ffd7265302741434d90e63607b7c02e0, type: 3}
+      propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
