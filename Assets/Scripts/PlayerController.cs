@@ -31,7 +31,11 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space)) {
             //fazendo a velocidade do RB ir para cima
             meuRB.velocity = Vector2.up * velocidade;
-            Instantiate(puff, transform.position, Quaternion.identity);
+
+            //salvando a instancia criada em uma variavel
+            GameObject meuPuff = Instantiate(puff, transform.position, Quaternion.identity);
+
+            Destroy(meuPuff, 1.5f);  
         }
     }
 
