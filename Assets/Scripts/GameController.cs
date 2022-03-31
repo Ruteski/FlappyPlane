@@ -32,9 +32,16 @@ public class GameController : MonoBehaviour {
     //variavel para ganhar level
     [SerializeField] private float proximoLevel = 10f;
 
+    //variavel para o som de level up
+    [SerializeField] private AudioClip levelUp;
+
+    //[SerializeField] private Transform transformCamera;
+    private Vector3 camPos;
+
     // Start is called before the first frame update
     void Start() {
         levelTexto.text = "Level: 1";
+        camPos = Camera.main.transform.position;
     }
 
     // Update is called once per frame
@@ -56,6 +63,8 @@ public class GameController : MonoBehaviour {
             level++;
             levelTexto.text = "Level: " + level.ToString();
             proximoLevel += proximoLevel;
+            //AudioSource.PlayClipAtPoint(levelUp, transformCamera.position, 0.2f);
+            AudioSource.PlayClipAtPoint(levelUp, camPos, 0.1f);
         }
     }
 

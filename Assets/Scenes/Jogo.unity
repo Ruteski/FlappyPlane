@@ -246,6 +246,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!4 &1839343546 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 307549670848229697, guid: a10f75d7fe6818d4bb813e733eb12029, type: 3}
+  m_PrefabInstance: {fileID: 307549670807685569}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &307549670807685569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -631,6 +636,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7104067660106144955, guid: 70ec9e0a87d8f3142889b3ba25399ece, type: 3}
+      propertyPath: levelUp
+      value: 
+      objectReference: {fileID: 8300000, guid: d3895d09bb9b22e40b7bbf5cd77ed438, type: 3}
+    - target: {fileID: 7104067660106144955, guid: 70ec9e0a87d8f3142889b3ba25399ece, type: 3}
       propertyPath: levelTexto
       value: 
       objectReference: {fileID: 19412817}
@@ -638,5 +647,9 @@ PrefabInstance:
       propertyPath: pontosTexto
       value: 
       objectReference: {fileID: 122298446}
+    - target: {fileID: 7104067660106144955, guid: 70ec9e0a87d8f3142889b3ba25399ece, type: 3}
+      propertyPath: transformCamera
+      value: 
+      objectReference: {fileID: 1839343546}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70ec9e0a87d8f3142889b3ba25399ece, type: 3}
