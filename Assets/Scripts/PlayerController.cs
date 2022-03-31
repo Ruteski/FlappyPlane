@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D meuRB;
 
     [SerializeField] private float velocidade = 5f;
+    [SerializeField] private GameObject puff;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space)) {
             //fazendo a velocidade do RB ir para cima
             meuRB.velocity = Vector2.up * velocidade;
+            Instantiate(puff, transform.position, Quaternion.identity);
         }
     }
 
