@@ -21,8 +21,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Subir();
-
         LimitandoVelocidadeQueda();
+        VerificaLimites();
     }
 
     void Subir() {
@@ -44,5 +44,11 @@ public class PlayerController : MonoBehaviour
     //configurando a colisao do player
     private void OnTriggerEnter2D(Collider2D collision) {
         SceneManager.LoadScene("Jogo");
+    }
+
+    private void VerificaLimites() {
+        if (transform.position.y > 6f || transform.position.y < -6f) {
+            SceneManager.LoadScene("Jogo");
+        }
     }
 }
