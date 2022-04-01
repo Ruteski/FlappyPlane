@@ -88,6 +88,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
+  puff: {fileID: 3980722725430340584, guid: 1191f173b023ac3479bc25678b4d146e, type: 3}
 --- !u!58 &5157434413416684113
 CircleCollider2D:
   m_ObjectHideFlags: 0
